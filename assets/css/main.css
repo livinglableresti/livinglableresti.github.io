@@ -3405,25 +3405,23 @@ input, select, textarea {
 				background: #4CAF50;
 			}
 
-			#wrapper > section.article > header h1:after,
-			#wrapper > section.article > header h2:after {
-				background: #2196F3;
-			}
+		#wrapper > section.article > header h1:after,
+		#wrapper > section.article > header h2:after {
+			background: #FFC107;
+		}
 
-			#wrapper > section.event > header h1:after,
-			#wrapper > section.event > header h2:after {
-				background: #FF9800;
-			}
+		#wrapper > section.event > header h1:after,
+		#wrapper > section.event > header h2:after {
+			background: #FF9800;
+		}
 
-			#wrapper > section.announcement > header .article-type {
-				color: #4CAF50 !important;
-			}
+		#wrapper > section.announcement > header .article-type {
+			color: #4CAF50 !important;
+		}
 
-			#wrapper > section.article > header .article-type {
-				color: #2196F3 !important;
-			}
-
-			#wrapper > section.event > header .article-type {
+		#wrapper > section.article > header .article-type {
+			color: #FFC107 !important;
+		}			#wrapper > section.event > header .article-type {
 				color: #FF9800 !important;
 			}
 
