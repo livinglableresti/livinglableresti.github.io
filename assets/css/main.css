@@ -3332,18 +3332,16 @@ input, select, textarea {
 					top: 1rem;
 				}
 
-				#wrapper > section > header h1:after, #wrapper > section > header h2:after {
-					background: #fff;
-					border-radius: 0.5rem;
-					content: '';
-					display: block;
-					height: 0.5rem;
-					position: absolute;
-					top: 0.75rem;
-					width: 0.5rem;
-				}
-
-			#wrapper > section > header h1 {
+			#wrapper > section > header h1:after, #wrapper > section > header h2:after {
+				background: #fff;
+				border-radius: 0.75rem;
+				content: '';
+				display: block;
+				height: 0.75rem;
+				position: absolute;
+				top: 0.625rem;
+				width: 0.75rem;
+			}			#wrapper > section > header h1 {
 				margin-top: -2rem;
 			}
 
@@ -3399,6 +3397,34 @@ input, select, textarea {
 				position: absolute;
 				width: 0.5rem;
 				z-index: 1;
+			}
+
+			/* Article type color variations */
+			#wrapper > section.announcement > header h1:after,
+			#wrapper > section.announcement > header h2:after {
+				background: #4CAF50;
+			}
+
+			#wrapper > section.article > header h1:after,
+			#wrapper > section.article > header h2:after {
+				background: #2196F3;
+			}
+
+			#wrapper > section.event > header h1:after,
+			#wrapper > section.event > header h2:after {
+				background: #FF9800;
+			}
+
+			#wrapper > section.announcement > header .article-type {
+				color: #4CAF50 !important;
+			}
+
+			#wrapper > section.article > header .article-type {
+				color: #2196F3 !important;
+			}
+
+			#wrapper > section.event > header .article-type {
+				color: #FF9800 !important;
 			}
 
 	#wrapper .copyright {
