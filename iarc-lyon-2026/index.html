@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<!--
+	Paradigm Shift by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>The Lerești Art Gallery at IARC Lyon - 4P-CAN Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="The Lerești Living Lab art gallery was presented at the International Agency for Research on Cancer (IARC) in Lyon on March 24, 2026." />
+		<meta name="keywords" content="4P-CAN, Lerești Living Lab, IARC, Lyon, cancer prevention, participatory research, citizen engagement" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body class="is-preload blog-page">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Blog Article -->
+			<section class="intro">
+			<header>
+			<h1 style="font-size: 2rem;">The Lerești Art Gallery was presented in Lyon at the International Agency for Research on Cancer</h1>
+			<p style="color: white;"><em>March 24, 2026</em></p>
+				<ul class="actions">
+						<li><a href="../index.html" class="button gold-button">&larr; Back to Home</a></li>
+					</ul>
+					</header>
+					<div class="content">
+						<span class="image fill" data-position="center"><img src="../images/lyon/foto_02.jpeg" alt="Lerești Living Lab art gallery in Lyon" /></span>
+					</div>
+				</section>
+
+				<!-- Article Content -->
+				<section>
+					<div class="content">
+						<p>We are pleased to share that the <strong>Living Lab art gallery</strong> was presented on <strong>March 24, 2026</strong>, at the headquarters of the <strong>International Agency for Research on Cancer (IARC)</strong> in Lyon.</p>
+
+						<p>This moment highlights the role of the Lerești Living Lab as a real-world innovation ecosystem, where community-driven insights, expressed also through artistic formats, contribute to advancing cancer prevention and health promotion at the European level.</p>
+
+						<p>The art gallery is conceived as a tool for citizen and interested stakeholders' engagement, an essential element for stimulating participatory research and strengthening collaboration between communities, researchers, and public health institutions.</p>
+
+						<h2>Photo Gallery</h2>
+						<div class="gallery-preview" style="display: grid; grid-template-columns: 2fr 1fr; grid-template-rows: 1fr 1fr; gap: 8px; margin-bottom: 1.5rem; max-height: 300px;">
+							<img src="../images/lyon/foto_01.jpeg" alt="Lyon event photo 1" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px; cursor: pointer; grid-row: span 2;" onclick="openSlideshow(0)" />
+							<img src="../images/lyon/foto_02.jpeg" alt="Lyon event photo 2" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px; cursor: pointer;" onclick="openSlideshow(1)" />
+							<div style="position: relative; cursor: pointer;" onclick="openSlideshow(2)">
+								<img src="../images/lyon/foto_03.jpeg" alt="Lyon event photo 3" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px;" />
+								<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); border-radius: 6px; display: flex; justify-content: center; align-items: center;">
+									<span style="color: white; font-size: 1.2rem; font-weight: 600;">+1 more</span>
+								</div>
+							</div>
+						</div>
+						<div style="text-align: center;">
+							<button class="button" onclick="openSlideshow(0)" style="cursor: pointer;">View All Photos</button>
+						</div>
+
+						<hr />
+
+						<div id="slideshow-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 10000; justify-content: center; align-items: center;">
+							<button onclick="closeSlideshow()" style="position: absolute; top: 20px; right: 30px; width: 50px; height: 50px; font-size: 40px; color: white !important; background: none !important; border: none !important; cursor: pointer; z-index: 10001; display: flex; align-items: center; justify-content: center; line-height: 1; opacity: 1 !important;">&times;</button>
+							<button onclick="changeSlide(-1)" style="position: absolute; left: 20px; top: 50%; transform: translateY(-50%); width: 60px; height: 60px; font-size: 40px; color: white !important; background: none !important; border: none !important; cursor: pointer; display: flex; align-items: center; justify-content: center; line-height: 1; opacity: 1 !important;">&#10094;</button>
+							<button onclick="changeSlide(1)" style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); width: 60px; height: 60px; font-size: 40px; color: white !important; background: none !important; border: none !important; cursor: pointer; display: flex; align-items: center; justify-content: center; line-height: 1; opacity: 1 !important;">&#10095;</button>
+							<div style="text-align: center; max-width: 90%; max-height: 80%;">
+								<img id="slideshow-image" src="" alt="Slideshow image" style="max-width: 100%; max-height: 80vh; object-fit: contain;" />
+								<p id="slideshow-counter" style="color: white; margin-top: 15px; font-size: 1rem;"></p>
+							</div>
+						</div>
+
+						<script>
+							var galleryImages = [
+								'../images/lyon/foto_01.jpeg',
+								'../images/lyon/foto_02.jpeg',
+								'../images/lyon/foto_03.jpeg',
+								'../images/lyon/foto_04.jpeg'
+							];
+							var currentSlide = 0;
+
+							function openSlideshow(index) {
+								currentSlide = index;
+								document.getElementById('slideshow-modal').style.display = 'flex';
+								document.body.style.overflow = 'hidden';
+								updateSlideshow();
+							}
+
+							function closeSlideshow() {
+								document.getElementById('slideshow-modal').style.display = 'none';
+								document.body.style.overflow = 'auto';
+							}
+
+							function changeSlide(direction) {
+								currentSlide += direction;
+								if (currentSlide >= galleryImages.length) currentSlide = 0;
+								if (currentSlide < 0) currentSlide = galleryImages.length - 1;
+								updateSlideshow();
+							}
+
+							function updateSlideshow() {
+								document.getElementById('slideshow-image').src = galleryImages[currentSlide];
+								document.getElementById('slideshow-counter').textContent = (currentSlide + 1) + ' / ' + galleryImages.length;
+							}
+
+							document.addEventListener('keydown', function(e) {
+								if (document.getElementById('slideshow-modal').style.display === 'flex') {
+									if (e.key === 'Escape') closeSlideshow();
+									if (e.key === 'ArrowLeft') changeSlide(-1);
+									if (e.key === 'ArrowRight') changeSlide(1);
+								}
+							});
+						</script>
+
+						<ul class="actions stacked">
+							<li><a href="https://4p-can.eu/" class="button primary large" target="_blank" rel="noopener noreferrer">4P-CAN Website</a></li>
+						</ul>
+
+						<hr />
+
+						<ul class="actions">
+							<li><a href="../index.html" class="button gold-button large">&larr; Back to Home</a></li>
+						</ul>
+					</div>
+				</section>
+
+				<!-- Copyright -->
+					<div class="copyright">&copy; 4P-CAN Project. All rights reserved. Design: Bogdan Vidrascu based on a template from <a href="https://html5up.net">HTML5 UP</a>.</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
