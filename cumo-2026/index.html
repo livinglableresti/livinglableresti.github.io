@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<!--
+	Paradigm Shift by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Annual congress of the Montenegrin Association of Medical Oncologists (CUMO) – 4P-CAN Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="4P-CAN at the annual congress of the Montenegrin Association of Medical Oncologists (CUMO) in Budva, Montenegro." />
+		<meta name="keywords" content="4P-CAN, CUMO, Budva, Montenegro, NCCPs, cancer prevention, INOMED, CURTAIN Project" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body class="is-preload blog-page">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Blog Article -->
+			<section class="intro">
+			<header>
+			<h1 style="font-size: 2rem;">Annual congress of the Montenegrin Association of Medical Oncologists (CUMO)</h1>
+			<p style="color: white;"><em>May 14, 2026</em></p>
+				<ul class="actions">
+					<li><a href="../index.html" class="button gold-button">← Back to Home</a></li>
+				</ul>
+				</header>
+				<div class="content">
+						<span class="image fill" data-position="center"><img src="montenegro_2026.jpeg" alt="Annual congress of the Montenegrin Association of Medical Oncologists in Montenegro" /></span>
+				</div>
+			</section>
+
+				<!-- Article Content -->
+				<section>
+					<div class="content">
+						<p>In Budva, Montenegro, <strong>Marius Geanta, MD, PhD</strong>, President of INOMED and Coordinator of the <strong>4P-CAN Project</strong> and <strong>CURTAIN Project</strong>, delivered a presentation titled <em>European Guidelines for NCCPs</em>.</p>
+
+						<p>The session traced how European cancer policy has evolved over recent years, moving from strategic vision documents toward implementation infrastructures rooted in communities. A key reference point was the 2019 INOMED position paper, <a href="https://ino-med.ro/docs/vision-cancer-eu-2019.pdf" target="_blank" rel="noopener noreferrer">A new vision for cancer in the European Union: data, technology and human touch</a>.</p>
+
+						<p>The presentation also reflected on the role of National Cancer Control Plans, Romania's 2022 law for the prevention and combating of cancer, and the persistent inequalities in cancer prevention across Europe. It highlighted the need to move from standardised top-down prevention models toward community-based implementation that reaches people where they already are.</p>
+
+						<p>Using the experience of the Lerești Living Lab and the broader ecosystem of projects around 4P-CAN, the session underlined how prevention becomes more meaningful when it is built through participation, trust, health literacy, and long-term local infrastructures.</p>
+
+						<p>At the same event, another edition of the „Art of Networks” art exhibition was also presented. The participants were able to engage with the artwork and reflect on the themes of community, health, and prevention.</p>
+
+						<h2>Photo Gallery</h2>
+						<div class="gallery-preview" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 1.5rem;">
+							<img src="montenegro_2026.jpeg" alt="CUMO congress photo 1" style="width: 100%; height: 220px; object-fit: cover; border-radius: 6px; cursor: pointer;" onclick="openSlideshow(0)" />
+							<img src="WhatsApp Image 2026-05-15 at 13.39.16.jpeg" alt="CUMO congress photo 2" style="width: 100%; height: 220px; object-fit: cover; border-radius: 6px; cursor: pointer;" onclick="openSlideshow(1)" />
+							<img src="WhatsApp Image 2026-05-15 at 13.39.16 (1).jpeg" alt="CUMO congress photo 3" style="width: 100%; height: 220px; object-fit: cover; border-radius: 6px; cursor: pointer;" onclick="openSlideshow(2)" />
+							<img src="WhatsApp Image 2026-05-15 at 13.39.16 (2).jpeg" alt="CUMO congress photo 4" style="width: 100%; height: 220px; object-fit: cover; border-radius: 6px; cursor: pointer;" onclick="openSlideshow(3)" />
+						</div>
+						<div style="text-align: center;">
+							<button class="button" onclick="openSlideshow(0)" style="cursor: pointer;">View Gallery</button>
+						</div>
+
+						<div id="slideshow-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 10000; justify-content: center; align-items: center;">
+							<button onclick="closeSlideshow()" style="position: absolute; top: 20px; right: 30px; width: 50px; height: 50px; font-size: 40px; color: white !important; background: none !important; border: none !important; cursor: pointer; z-index: 10001; display: flex; align-items: center; justify-content: center; line-height: 1; opacity: 1 !important;">&times;</button>
+							<button onclick="changeSlide(-1)" style="position: absolute; left: 20px; top: 50%; transform: translateY(-50%); width: 60px; height: 60px; font-size: 40px; color: white !important; background: none !important; border: none !important; cursor: pointer; display: flex; align-items: center; justify-content: center; line-height: 1; opacity: 1 !important;">&#10094;</button>
+							<button onclick="changeSlide(1)" style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); width: 60px; height: 60px; font-size: 40px; color: white !important; background: none !important; border: none !important; cursor: pointer; display: flex; align-items: center; justify-content: center; line-height: 1; opacity: 1 !important;">&#10095;</button>
+							<div style="text-align: center; max-width: 90%; max-height: 80%;">
+								<img id="slideshow-image" src="" alt="Slideshow image" style="max-width: 100%; max-height: 80vh; object-fit: contain;" />
+								<p id="slideshow-counter" style="color: white; margin-top: 15px; font-size: 1rem;"></p>
+							</div>
+						</div>
+
+						<script>
+							var galleryImages = [
+								'montenegro_2026.jpeg',
+								'WhatsApp Image 2026-05-15 at 13.39.16.jpeg',
+								'WhatsApp Image 2026-05-15 at 13.39.16 (1).jpeg',
+								'WhatsApp Image 2026-05-15 at 13.39.16 (2).jpeg'
+							];
+							var currentSlide = 0;
+
+							function openSlideshow(index) {
+								currentSlide = index;
+								document.getElementById('slideshow-modal').style.display = 'flex';
+								document.body.style.overflow = 'hidden';
+								updateSlideshow();
+							}
+
+							function closeSlideshow() {
+								document.getElementById('slideshow-modal').style.display = 'none';
+								document.body.style.overflow = 'auto';
+							}
+
+							function changeSlide(direction) {
+								currentSlide += direction;
+								if (currentSlide >= galleryImages.length) currentSlide = 0;
+								if (currentSlide < 0) currentSlide = galleryImages.length - 1;
+								updateSlideshow();
+							}
+
+							function updateSlideshow() {
+								document.getElementById('slideshow-image').src = galleryImages[currentSlide];
+								document.getElementById('slideshow-counter').textContent = (currentSlide + 1) + ' / ' + galleryImages.length;
+							}
+
+							document.addEventListener('keydown', function(e) {
+								if (document.getElementById('slideshow-modal').style.display === 'flex') {
+									if (e.key === 'Escape') closeSlideshow();
+									if (e.key === 'ArrowLeft') changeSlide(-1);
+									if (e.key === 'ArrowRight') changeSlide(1);
+								}
+							});
+						</script>
+
+						<hr />
+
+						<ul class="actions stacked">
+							<li><a href="../index.html" class="button primary large">Back to Home</a></li>
+						</ul>
+					</div>
+				</section>
+
+				<!-- Copyright -->
+					<div class="copyright">&copy; 4P-CAN Project. All rights reserved. Design: Bogdan Vidrașcu based on a template from <a href="https://html5up.net">HTML5 UP</a>.</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
